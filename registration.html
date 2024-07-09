@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="rc.css">
+    <script src="rj.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h2 id="hid">Registration Form</h2>
+        <div id="success" class="suc"><h2>Form has been submitted successfully!</h2></div>
+        <div id="error_message"></div>
+        <form id="myform" name="form" action="register.php" method="POST" onsubmit="return val()">
+            <div class="input_field">
+                <input type="text" placeholder="Name" id="name" name="name">
+            </div>
+            <div class="input_field">
+                <input type="password" placeholder="Password" id="pass" name="pass">
+            </div>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

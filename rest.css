@@ -1,0 +1,475 @@
+/*
+  ========================================
+  Style Reset START
+  ========================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+  ========================================
+  Style Reset END
+  ========================================
+
+  ========================================
+  START CSS CODING . . . BEGIN!
+  ========================================
+
+  ========================================
+  GRID
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+  ========================================
+  COLORS FONTS & BG'S
+  ========================================
+*/
+/* For big lettering ->font-family: 'Noto Sans TC', sans-serif;
+for the paragraphs --> font-family: 'Roboto', sans-serif;*/
+html{
+  font-size: 62.5%;
+}
+
+body{
+  color:#0d0d25;
+}
+
+h1, h3{
+  font: bold 10rem 'Playfair Display', serif;
+}
+
+h3{
+  font-size: 8rem;
+}
+
+p, li, span, button, h2, h4, h5, h6, address{
+  font: 2.5rem 'Noto Sans JP', sans-serif;
+}
+
+p{
+  font-size: 2rem;
+  line-height: 3rem;
+  padding-bottom: 3rem;
+}
+
+h2, address{
+  color: #ff8800;
+}
+
+address, .openingHours h5, .money{
+  font-family: 'Prata', serif;
+}
+
+address{
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+h5{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.customer h5{
+  font-family: 'Sora', sans-serif;
+}
+
+h6{
+  color: #ceced4;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+header{
+  background: url("https://flexxsirv.sirv.com/24f4c34dd543535d738bd5409ec3fbe8c7718e65ef/brooke-lark-08bOYnH_r_E-unsplash__1_.jpg?w=1800") no-repeat center;
+ background-size: cover;
+}
+
+.sectionFirst{
+  background: url("https://i.imgur.com/wPJUV11.png") no-repeat center;
+  background-size: cover;
+}
+
+.sectionSecond {
+  background : #f2f6f7;
+}
+
+.sectionThird{
+  background: white url("https://i.imgur.com/REnhbaT.png") no-repeat center;
+  background-size: cover;
+}
+
+.customer{
+  background: white url("https://i.imgur.com/XPdTf81.png") no-repeat center;
+  background-size: 300px;
+}
+  /*
+  ========================================
+  SPECIFIC ITEM SIZING & LOOKS
+  ========================================
+*/
+.topNavImg, .socialIcons, .btnArrow{
+  height: 30px;
+  
+}
+
+.socialIcons{
+  height: 25px;
+}
+
+.iconPhone{
+  height: 50px;
+}
+
+.iconStarOrange, .iconStarYellow, .arrow{
+  height: 50px;
+}
+
+.dotScroll{
+  height: 100px;
+  width: auto;
+}
+
+.customerImg{
+  border-radius: 50%;
+  padding: 2%;
+}
+
+button, input{
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: white;
+  background: #ff8800;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1rem 3rem 1rem 3rem;
+  display: inline;
+}
+
+input{
+  background: white;
+  color: #dde8ec;
+  border: 2px solid #dde8ec;
+  text-align: left;
+  width: 70%;
+}
+
+.btnArrow{
+  height: 1.5rem;
+  margin-left: 1rem;
+  display: inline;
+}
+
+.btnDiscover{
+  padding-right: 1.5rem;
+}
+
+.menuTime{
+  padding-bottom: 1%;
+  border-bottom: 2px solid #dde8ec;
+}
+
+.logo{
+  display: block;
+  font-size: 4rem;
+  font-weight: bold;
+  font-variant: italic;
+  text-align: center;
+}
+
+  /*
+  ========================================
+  MAIN LAYOUT
+  ========================================
+*/
+header, .main{
+  padding: 5% 10%;
+  clear:both;
+  height: auto;
+  contain: content;
+}
+
+header{
+  padding-top: 2%;
+}
+
+header nav{
+  float: right;
+  clear: both;
+}
+
+header .mainText{
+  padding: 7% 0 2% 0;
+  width: 60%;
+}
+
+.mainText{
+  clear: both;
+  padding-bottom: 4rem;
+}
+.sectionFirst .contentConatiainer{
+  width:90%;
+}
+.sectionFirst {
+  padding: 5% 8% 10% 40%;
+  float: right;
+}
+
+.sectionSecond, .sectionThird, .sectionFourth{
+  text-align: center;
+}
+
+li{
+  display: inline-block;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.sectionCall span, .sectionCall address{
+  display: block;
+  padding: 0 30% 2% 30%;
+}
+.iconPhone {
+  height: 100px;
+  margin: 0 40%;
+}
+
+/*
+  ========================================
+  NIGHTMARE OF SECTION TWO
+  ========================================
+*/
+div{
+  color: white;
+  font-size: 1rem;
+  display: block;
+  padding: top
+}
+
+div span, div img, div button{
+  display: block;
+  text-align: center;
+  padding-bottom: 3%;
+}
+div img{
+  padding: 1% 25%;
+}
+div button{
+  margin-left: 25%;
+}
+.iconStarOrange{
+  height: 30px;
+}
+
+.imgRow{
+  width: 100%;
+  height: auto;
+}
+.imgContainer{
+  height: 400px;
+  width: 300px;
+  float: left;
+  padding: 1%;
+}
+
+.menuImg{
+  width: 100%;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.imgOverlay{
+  position: relative;
+  height: 400px;
+  top: -100%;
+  left: 0%;
+  padding: 1%;
+}
+.money{
+  padding-top: 100px;
+}
+
+.imgOverlay{
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.imgOverlay:hover{
+   opacity: 1;
+  transform: translateY(-10px);
+  background: rgba(13,13,37, .3);
+  transition: 0.5s;
+}
+
+/*
+  ========================================
+  MINI MODULE LAYOUTS
+  ========================================
+*/
+
+.social{
+  float: left;
+  padding-right: 5rem;
+}
+
+.searchButton{
+  padding: 5% 0;
+}
+.contentContainer{
+  padding: 0 20%;
+}
+.openingHours{
+  width: 50%;
+  padding: 3% 1%;
+  float: left;
+  text-align: center;
+}
+
+.arrow{
+  margin: 15%   4%;
+}
+
+.customer p{
+  padding-top: 3%;
+}
+
+/*
+  ========================================
+  INTERACTIVE
+  ========================================
+*/
+a:link, a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:active{
+  color: #ff8800;
+  transition: 0.3s;
+}
+
+button:hover, button:active{
+  background: #fcae52;
+  border: inherit;
+  transform: translateX(10px);
+  transition: transform 0.25s;
+}
+
+.menuTime:hover, .menuTime:active{
+  border-bottom: 2px solid #ff8800;
+}
+
+/*
+  ========================================
+  MEDIA QUERIES
+  ========================================
+*/
+@media (min-width: 1201px) and (max-width: 3000px){
+  .logo{
+    display: none;
+  }
+}
+
+@media (max-width: 1200px){
+  .logo{
+    display: static;
+  }
+  .topNavigation{
+    display: none;
+  }
+  .mainText, header .mainText{
+    width: 100%;
+  }
+  .sectionFirst, .sectionSecond, .sectionThird, .sectionFourth{
+    padding: 5% 8% 10% 8%;
+  }
+  .sectionCall address{
+    padding: 0 15% 2% 15%;
+  }
+  .arrow, .video{
+    display: none;
+  }
+  p{
+    font-size: 15px;
+  }
+  h1{
+    font-size: 8rem;
+  }
+  h3{
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 900px){
+
+  p{
+    font-size: 15px;
+  }
+}
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #000;
+    text-align: center;
+  }
+.footer p {
+  text-decoration: none;
+  color: #fff;
+}
+.footer a {
+    text-decoration: none;
+    color: #fcae52;
+}
+.footer a:hover {
+    text-decoration: underline;
+    color: red;
+}
